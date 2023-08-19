@@ -39,7 +39,7 @@ public function ajax_list()
       $row[] = '<b>'.$datanya->posisi.'</b>';
       $row[] = $this->date_lengkap($datanya->tgl_log);
 	  if ($datanya->file == '') { 
-		$row[] = '<a href='.base_url('Upload/kosong.pdf').' target="blank" title="File Pengantar" class="btn btn-outline-danger btn-sm"><i class="fas fa-file-pdf"></i> Berkas</a>';
+		$row[] = '<a href='.base_url('Upload/Kosong.pdf').' target="blank" title="File Pengantar" class="btn btn-outline-danger btn-sm"><i class="fas fa-file-pdf"></i> Berkas</a>';
 	 	} else {
 			$row[] = '<a href='.base_url('Upload/'.$datanya->file).' target="blank" title="File Pengantar" class="btn btn-outline-danger btn-sm"><i class="fas fa-file-pdf"></i> Berkas</a>';
 		} 
